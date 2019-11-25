@@ -1,0 +1,43 @@
+11.5893693826 1.92067978828 22.2594675321 851150.0
+11.040125345 1.87461490499 20.6959835246 1033069.0
+15.3269109018 2.20877958717 33.8537679342 388560.0
+14.8529653091 2.17436098591 32.2957082931 405236.0
+32.9348350386 3.23782080922 106.637094236 308072.0
+181.723599317 7.60555180218 1382.10824829 168168.0
+21.3842830338 2.60898997671 55.7913800943 1026718.5
+59.3242518102 4.34551445074 257.794393521 359016.5
+86.625328648 5.25106641575 454.875354016 257114.0
+89.9852224785 5.35193291488 481.594874036 263576.0
+24.3970126522 2.78672035205 67.987651687 1122417.0
+52.0427312891 4.0701002289 211.819132532 572660.0
+27.9723490131 2.98393619749 83.467704749 1017423.0
+71.9293152915 4.78495686122 344.178670727 402916.0
+64.1550529226 4.51898081362 289.915453254 398601.0
+23.6219684237 2.74209884584 64.7737723511 742518.0
+56.1677955068 4.22832881822 237.495908397 273437.0
+61.7938186226 4.43504040259 274.058082222 284208.5
+13.2233867733 2.05161759077 27.1293329137 901229.5
+41.0023879204 3.61268119714 148.128555878 226033.5
+41.0023879204 3.61268119714 148.128555878 226033.5
+57.1839530304 4.26640569808 243.969943048 169854.5
+(Actual Reponse) 2.0 (Output) 5.0 ../Dataset/images/Test_Images/2_21.jpg
+(Actual Reponse) 2.0 (Output) 5.0 ../Dataset/images/Test_Images/2_22.jpg
+(Actual Reponse) 2.0 (Output) 5.0 ../Dataset/images/Test_Images/2_23.jpg
+(Actual Reponse) 2.0 (Output) 5.0 ../Dataset/images/Test_Images/2_24.jpg
+(Actual Reponse) 4.0 (Output) 8.0 ../Dataset/images/Test_Images/4_21.jpg
+(Actual Reponse) 6.0 (Output) 9.0 ../Dataset/images/Test_Images/6_21.jpg
+(Actual Reponse) 6.0 (Output) 9.0 ../Dataset/images/Test_Images/6_23.jpg
+(Actual Reponse) 8.0 (Output) 14.0 ../Dataset/images/Test_Images/8_21.jpg
+(Actual Reponse) 8.0 (Output) 14.0 ../Dataset/images/Test_Images/8_25.jpg
+(Actual Reponse) 9.0 (Output) 6.0 ../Dataset/images/Test_Images/9_21.jpg
+(Actual Reponse) 9.0 (Output) 6.0 ../Dataset/images/Test_Images/9_22.jpg
+(Actual Reponse) 9.0 (Output) 6.0 ../Dataset/images/Test_Images/9_23.jpg
+(Actual Reponse) 9.0 (Output) 11.0 ../Dataset/images/Test_Images/9_24.jpg
+(Actual Reponse) 9.0 (Output) 11.0 ../Dataset/images/Test_Images/9_25.jpg
+(Actual Reponse) 11.0 (Output) 1.0 ../Dataset/images/Test_Images/11_24.jpg
+(Actual Reponse) 12.0 (Output) 11.0 ../Dataset/images/Test_Images/12_21.jpg
+(Actual Reponse) 12.0 (Output) 11.0 ../Dataset/images/Test_Images/12_22.jpg
+(Actual Reponse) 12.0 (Output) 9.0 ../Dataset/images/Test_Images/12_23.jpg
+(Actual Reponse) 12.0 (Output) 9.0 ../Dataset/images/Test_Images/12_24.jpg
+72.8571428571
+
