@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Foodie -- we serve the food</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/main.js"></script>
+    <style type="text/css">
+    a:link {color: #ffffff}
+    a:visited {color: #ffffff}
+    a:hover {color: #ffffff}
+    a:active {color: #ffffff}
+    table{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    .Remove-border {
+      border-top: none !important;
+      border-left: none !important;
+      border-bottom: none !important;
+      border-right: none !important; 
+      
+    }
+    table{
+      
+      width: 100% ;
+    }
+
+    td {
+      width: 25% ;
+    }
+    table.tab{
+      border-collapse: collapse;
+      border-style: hidden;
+    }
+    </style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="myApp" ng-controller="customersCtrl">
+
+<div class="all-orders">
+	<div style="color:Red" align="center">
+		Orders
+	</div> 
+  <table align="center" cellpadding="10" bg-color="white" frame="box">
+	<tr ng-repeat="user in orders">
+  <td>
+		    Location:{{user.location}}
+  </td>
+  <td>
+     <table align="center" class="tab" cellpadding="10">
+      <col width="130">
+      <col width="50">
+	   <tr ng-repeat="order in user.food">
+      <td>
+        <table align="center" cellpadding="10" frame="box" border="0">
+            <tr ng-repeat="food in order">
+              <td>
+    		        {{food.name}} 
+              </td>
+              <td>
+                {{food.qty}}
+              </td>
+            </tr>
+        </table>
+      </td>
+  	 </tr>
+     </table>
+  </td>
+  </tr>
+  </table>
+</div>
+
+</body>
+<style>
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table th:{
+	border: 1px sollid grey;
+	border-collapse: collapse;
+	padding: 5px;
+	font-size: 10px;
+}
+div span:nth-child(odd) {
+  background-color: #f1f19f;
+}
+
+div span:nth-child(even) {
+  background-color: #fff1f1;
+}
+</style>
+<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+  $scope.names = [
+  {
+  	Name:"loke",Country:"invalid", valid:0
+  },
+  {
+  	Name:"hello",Country:"hai", valid:1
+  },
+  {
+  	Name:"karthik",Country:"world", valid:1
+  }];
+  console.log(typeof($scope.names));
+
+  var getNewItems = function(){
+    $http.get('polling.php').then(function(response){
+  	console.log(response.data);
+  	$scope.orders = response.data;
+  	console.log($scope.orders);
+    getNewItems(); //uncomment for polling
+  })
+  };
+  getNewItems();
+  //setInterval(getNewItems,2000);
+});
+
+</script>
+</html>

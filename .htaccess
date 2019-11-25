@@ -1,0 +1,13 @@
+Options -Indexes
+RewriteEngine On
+RewriteRule ^home index.php
+RewriteRule ^helper help.php
+RewriteRule ^register register.php
+RewriteRule ^orderDetails orderDetails.php
+RewriteRule ^order order.php
+RewriteRule ^logout login.php?ac=logout
+RewriteRule ^login login.php
+RewriteRule ^changepw changepw.php
+RewriteRule ^deact deact.php
+RewriteRule ^Admin AdminHome.html
+RewriteRule ^findCalories findCalories.php

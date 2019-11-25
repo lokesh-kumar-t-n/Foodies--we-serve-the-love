@@ -1,0 +1,18 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function renderLogin(){
+			xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = showLogin;
+			xhr.open("GET","https://localhost/Foodies/home",false);
+			xhr.send();
+		}
+		function showLogin(){
+			if(this.status == 200 && this.readyState == 4){
+				document.innerHTML = this.response;
+			}
+		}
+	</script>
+</head>
+<body>
+</body>
